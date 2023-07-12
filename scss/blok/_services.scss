@@ -1,0 +1,114 @@
+.services {
+  padding: 56px 0;
+}
+
+.services_content {
+  text-align: center;
+}
+
+.services_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 1em;
+}
+
+.services_text {
+  max-width: 719px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 48px;
+  column-gap: 70px;
+  margin-bottom: 40px;
+}
+
+.services_item {
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 8px 8px 0px $color4;
+  padding: 24px;
+
+  &::before {
+    content: '';
+    max-width: 223px;
+    width: 100%;
+    height: 130px;
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+  &:nth-child(1)::before {
+    background: url('../../images/website1.svg') no-repeat center;
+  }
+  &:nth-child(2)::before {
+    background: url('../../images/website2.svg') no-repeat center;
+  }
+  &:nth-child(3)::before {
+    background: url('../../images/website3.svg') no-repeat center;
+  }
+  &:nth-child(4)::before {
+    background: url('../../images/website4.svg') no-repeat center;
+  }
+  &:nth-child(5)::before {
+    background: url('../../images/website5.svg') no-repeat center;
+  }
+}
+
+.services_sub__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 1em;
+}
+
+.services_sub__text {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  margin-bottom: 1em;
+}
+
+.services_orders__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services_btn {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 24px;
+  color: $color1;
+  padding: 6px 14px;
+  border: 2px solid $color3;
+  background: $color3;
+  margin-right: 32px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .4s ease;
+
+  &:hover {
+    background: $color1;
+    color: $color3;
+  }
+}
+
+.services_link {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: $color3;
+  text-decoration: underline;
+}

@@ -1,0 +1,108 @@
+.orders {
+  padding: 56px 0 64px 0;
+  background: $color3;
+}
+
+.orders_container {
+  text-align: center;
+}
+
+.orders_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: $color1;
+  margin-bottom: 16px;
+}
+
+.orders_text {
+  max-width: 719px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: $color1;
+  margin-bottom: 24px;
+}
+
+.orders_input__blok {
+  max-width: 348px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  background: $color1;
+  border-radius: 5px;
+}
+
+.orders_input__box:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+.orders_input, 
+.orders_list {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: transparent;
+  outline: none;
+  background: $color6;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color2;
+}
+
+.orders_list__cursor select {
+  background-image: none;
+  box-shadow: none;
+  appearance: none;
+}
+
+.orders_list::-ms-expand {
+  display: none;
+}
+
+.orders_list {
+  flex: 1;
+  cursor: pointer;
+}
+
+.orders_list__cursor {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  
+  &::after {
+    content: '\25bc';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding-right: 20px;
+    pointer-events: none;
+  }
+}
+
+.orders_btn {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 24px;
+  padding: 6px 14px;
+  border: 2px solid $color3;
+  background: $color3;
+  color: $color1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .4s ease;
+
+  &:hover {
+    background: $color1;
+    color: $color3;
+  }
+}

@@ -1,0 +1,71 @@
+.main_footer {
+  padding: 56px;
+  background: $color2;
+  color: $color1;
+}
+
+.main_footer__container {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 100px;
+}
+
+.main_footer__blok {
+  max-width: 325px;
+  width: 100%;
+}
+
+.main_footer__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 1em;
+}
+
+.main_footer__text,
+.link_text {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: $color1;
+}
+
+.main_footer__link-box {
+  display: flex;
+  column-gap: 87px;
+}
+
+.main_footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.main_footer__telegram,
+.main_footer__facebook,
+.main_footer__instagram {
+  width: 106px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.main_footer__telegram::before,
+.main_footer__facebook::before,
+.main_footer__instagram::before {
+  content: '';
+  width: 22px;
+  height: 24px;
+  display: inline-block;
+}
+
+.main_footer__telegram::before {
+  background: url('../../images/telegram.svg') no-repeat center;
+}
+
+.main_footer__facebook::before {
+  background: url('../../images/facebook.svg') no-repeat center;
+}
+
+.main_footer__instagram::before {
+  background: url('../../images/instagram.svg') no-repeat center;
+}
